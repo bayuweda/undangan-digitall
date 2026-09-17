@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Qwitcher+Grypen:wght@400;700&family=Yesteryear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Qwitcher+Grypen:wght@400;700&family=Yesteryear&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-playwrite: "Playwrite US Trad", sans-serif;
+  --font-qwitcher: "Qwitcher Grypen";
+  --font-playfair: "Playfair Display";
+}
+
+/* Fix Safari iOS supaya blur jalan */
+.blur-fix {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.fixed-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("/assets/bg-2.webp") center/cover no-repeat;
+  z-index: -1;
+}
