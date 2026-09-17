@@ -102,7 +102,7 @@ export default function OurGallery() {
 
           <img
             className="w-full h-full object-cover"
-            src="assets/Galery/GDS04571 (1).jpg"
+            src="/assets/Galery/profil.jpg"
             alt=""
             srcset=""
           />
